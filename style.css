@@ -1,0 +1,170 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    background-image: url("./assets/fundo.jpg"), url("./assets/fundo2.jpg");
+    background-repeat:no-repeat, repeat;
+    background-position: bottom, top;
+    background-size: 100%, 100%;
+}
+
+#barraPesquisa{
+    background-image: url(./assets/search.svg);
+    background-repeat: no-repeat;
+    background-position:  right;
+    padding-right: 10px;
+    width: 540px;
+}
+
+#containerMeio{
+    margin-bottom: 500px;
+}
+
+#iconRickMorty{
+    width: 40px;
+    padding-top: 10px;
+}
+
+#titulo-api{
+    font-weight: bold;
+    color:rgb(7, 83, 7);
+    font-size: 50px;
+
+    animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-800px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+.card{
+    width: 20%;
+    border-radius: 2%;
+    margin:2.5%;
+    display: flex;
+    align-items: center;
+
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-bottom: 1px solid rgb(7, 255, 7);
+    border-left: 1px solid rgb(7, 255, 7);
+    border-right: 1px solid rgb(7, 255, 7);
+
+    background-image: url("./assets/fundo2.jpg");
+    background-size: 100%;
+}
+
+.imageCard{
+    
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    width: 100%;
+}
+
+.infoCard{
+    display: block;
+    align-items: center;
+    color:white;
+    font-size: small;
+    text-align: start;
+}
+
+.nameCard{
+    padding-top: 5%;
+    text-align: start;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 0px;
+    border-radius: 2%;
+    border: 1px solid rgb(7, 255, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.cardDetalhe {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+}
+
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+#container-botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botaoDetalhe {
+    border: solid 1px yellowgreen;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(7, 83, 7);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.botaoDetalhe:hover{
+    background-color: white;
+    color: rgb(7, 83, 7);
+    transform: scale(1.2)
+}
+
+.botoes {
+    border: solid 1px yellowgreen;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(7, 83, 7);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.botoes:hover{
+    background-color: white;
+    color: rgb(7, 83, 7);
+    transform: scale(1.2);
+}
+
+#container-footer {
+    background-color: rgb(6, 12, 6);
+}
+
+#textos-footer{
+    color: rgb(77, 170, 77);
+    font-size: 14px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+#texto-footer{
+    color: rgb(77, 170, 77);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}

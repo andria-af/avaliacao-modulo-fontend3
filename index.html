@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>API Rick and Morty</title>
+</head>
+
+<body class="vh-100">
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <figure>
+                    <img src="./assets/iconRickMorty.png" alt="" id="iconRickMorty">
+                </figure>
+            </div>
+        </div>
+        <di class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <div id="container-titulo">
+                    <h1 id="titulo-api">API Rick and Morty</h1>
+                </div>
+            </div>
+        </di>
+        <div class="row">
+            <div class="col">
+                <nav class="navbar d-flex align-items-center justify-content-center mb-5">
+                    <form class="form-inline d-flex align-items-center justify-content-center">
+                      <input id="barraPesquisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    </form>
+                  </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    
+    <section class="container-fluid h-100" id="containerPrincipal">
+        <div class="row" >
+            <div class="col">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xlg-10">
+                            <div id="containerCards" class="d-flex flex-wrap justify-content-evenly">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid text-center" id="containerMeio">
+                    <div class="row">
+                        <div>
+                            <div id="container-botoes">
+                                <button class="botoes" type="button" onclick="diminuirPagina()">Página anterior</button>
+                                <div id="botoes"></div>
+                                <button class="botoes" type="button" onclick="aumentarPagina()">Próxima página</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+<footer class="container-fluid" id="container-footer">
+    <div class="row">
+        <div class="col">
+
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col" id="textos-footer">
+                        <p id="texto-footer1"></p>
+                        <p id="texto-footer2"></p>
+                        <p id="texto-footer3"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-3 mt-10">
+                <div class="row">
+                    <div class="col">
+                        <h3 id="texto-footer">Desenvolvido por: <span style="color: white;">Ândria Ferreira</span> em 2023</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalDetalhe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+
+            <div id="containerDetalhe">
+            
+            </div>
+            <button type="button" id="botaoFecharModal" class="btn btn-secondary" data-bs-dismiss="modal"> x </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>
